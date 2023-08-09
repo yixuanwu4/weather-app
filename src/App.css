@@ -1,38 +1,68 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/home/nauxiy/Workspace/tmp/learning/JSprojects/weather/src/hk.jpg');
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  font-size: 100px;
+  margin-bottom: 28px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addCity {
+  font-size: larger;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input {
+  margin-left: 40px;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 16px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 4;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  color: rgba(255,255,255,0.8);
+  font-size: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover{
+	background: transparent;
+   box-shadow:none;
+}
+
+.searchResult {
+  width: 80vw;
+  height: 50vh;
+  display: inline-block;
+  padding: 24px 32px;
+  border: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  color: rgba(255,255,255,0.8);
+  font-size: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 20px;
 }
